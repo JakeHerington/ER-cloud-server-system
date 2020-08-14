@@ -1,0 +1,12 @@
+<button class="button" mat-button [matMenuTriggerFor]="menu">Select Vehicle</button>
+<mat-menu #menu="matMenu">
+  <!-- click button to load vehicle 1 data-->
+  <button class="dropButton" (click)='vehicle1Data()' mat-menu-item>Vehicle 1</button>
+  <!-- click button to load vehicle 2 data-->
+  <button class="dropButton" (click)='vehicle2Data()' mat-menu-item>Vehicle 2</button>
+</mat-menu>
+<!---<p style="float:right;">Battery: {{ battery }}</p>-->
+<button class="button" style="float:right;">| Log Out</button>
+<button id="emergencyButton" style="float:right;">Emergency Stop</button>
+<button class="button" style="float:right;">Return Home</button>
+
